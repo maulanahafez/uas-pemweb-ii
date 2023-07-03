@@ -3,8 +3,8 @@
   <div class="mt-[53px] p-5 lg:ml-[256px]">
     <h1 class="font-poppins text-2xl font-semibold">Tugas</h1>
     <div class="mt-4">
-      <a href="{{ route('tugas.create') }}"
-        class="inline-block rounded-md bg-blue-500 px-4 py-2 text-sm text-white">Create New Tugas</a>
+      {{-- <a href="{{ route('tugas.create') }}"
+        class="inline-block rounded-md bg-blue-500 px-4 py-2 text-sm text-white">Create New Tugas</a> --}}
     </div>
     <div class="shadow-dark-custom mt-4 rounded-md bg-white px-5 py-4">
       <div x-data="{ selected: 'All' }">

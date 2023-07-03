@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Controllers\DepartmentController;
+use App\Http\Controllers\KaryawanController;
+use App\Http\Controllers\ProyekController;
+use App\Http\Controllers\TugasController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +17,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::redirect('/', '/proyek')->name('index');
+
+Route::resource('proyek', ProyekController::class);
+Route::resource('tugas', TugasController::class);
+// Route::prefix('tugas')->group(function(){
+//     Route::get('/')->Tugas
+// });
+Route::resource('department', DepartmentController::class);
+Route::resource('karyawan', KaryawanController::class);

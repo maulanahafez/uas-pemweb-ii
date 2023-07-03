@@ -23,7 +23,7 @@
 </head>
 
 <body class="bg-gradient-to-r from-red-500 to-blue-500 text-white">
-
+  Welcome
 </body>
 
 </html>

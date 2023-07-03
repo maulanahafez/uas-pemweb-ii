@@ -69,14 +69,18 @@
           </div>
 
           <div class="hidden bg-sky-500 lg:block">
-            <div class="flex items-center gap-x-2">
+            <div class="flex items-center justify-end gap-x-2">
+              <div>
+                <a href="/login"
+                  class="ml-32 rounded-full bg-blue-500 px-3 py-1 text-sm text-white">Login</a>
+              </div>
               <span class="flex h-8 w-8 rounded-full border border-black/40">
                 <i class="fa-solid fa-user m-auto text-black/60"></i>
               </span>
               <div class="text-[12px]">
                 @auth
-                  {{-- <p>{{ Auth::user()->name }}</p>
-                  <p class="text-black/60">{{ Auth::user()->email }}</p> --}}
+                  <p>{{ Auth::user()->name }}</p>
+                  <p class="text-black/60">{{ Auth::user()->email }}</p>
                 @endauth
               </div>
             </div>
@@ -94,12 +98,21 @@
               </div>
               <div class="mt-4 px-2">
                 <div>
-                  <a href="{{ route('index') }}"
+                  <a href="/register"
                     class="hover:bg-sky-950 flex w-full items-center gap-x-2 rounded-sm px-4 py-2 transition hover:text-white">
                     <span class="flex h-6 w-6">
                       <i class="fa-solid fa-house m-auto text-lg"></i>
                     </span>
-                    <span class="text-lg">Dashboard</span>
+                    <span class="text-lg">Register</span>
+                  </a>
+                </div>
+                <div class="mt-2">
+                  <a href="/login"
+                    class="hover:bg-sky-950 flex w-full items-center gap-x-2 rounded-sm px-4 py-2 transition hover:text-white">
+                    <span class="flex h-6 w-6">
+                      <i class="fa-solid fa-house m-auto text-lg"></i>
+                    </span>
+                    <span class="text-lg">Login</span>
                   </a>
                 </div>
                 <div class="mt-2">
